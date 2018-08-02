@@ -8,8 +8,7 @@ const Header = props => (
     </span>
     <h1>Amy-Kate Andrews</h1>
     <p>
-      turning coffee into code<br />
-      one div at a time.
+      turning coffee into code<br /> one div at a time
     </p>
   </header>
 )
