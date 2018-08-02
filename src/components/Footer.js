@@ -1,15 +1,14 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import logo from '../assets/images/logo.svg'
-
 const Footer = props => (
   <footer id="footer">
     <section>
       <h2>hire me pls</h2>
       <p>
-        I'm currently accepting freelance work. If you need a rad site, drop me
-        a line.
+        I'm currently accepting freelance work. If you need a rad site, want
+        help on a project, or just want to talk about code, drop me a line.
+        &ensp; <span>💁</span>
       </p>
     </section>
     <section>

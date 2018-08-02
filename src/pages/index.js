@@ -6,26 +6,34 @@ import Waypoint from 'react-waypoint'
 
 import Header from '../components/Header'
 import Nav from '../components/Nav'
-import pic01 from '../assets/images/pic01.jpg'
+
+import portrait from '../assets/images/la-ak.jpg'
+import adidas from '../assets/images/logos/adidas.png'
+import byu from '../assets/images/logos/byu.png'
+import converse from '../assets/images/logos/converse.png'
+import ghost from '../assets/images/logos/ghost.png'
+import publik from '../assets/images/logos/publik.png'
+import rodeo from '../assets/images/logos/rodeo-austin.jpg'
+import projectSunday from '../assets/images/logos/project-sunday.png'
+import skiutah from '../assets/images/logos/skiutah.jpeg'
 
 class Index extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
-      stickyNav: false
+      stickyNav: false,
     }
   }
 
-  _handleWaypointEnter= () => {
-    this.setState(() => ({ stickyNav: false }));
+  _handleWaypointEnter = () => {
+    this.setState(() => ({ stickyNav: false }))
   }
 
   _handleWaypointLeave = () => {
-    this.setState(() => ({ stickyNav: true }));
+    this.setState(() => ({ stickyNav: true }))
   }
 
   render() {
-
     return (
       <div>
         <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
@@ -35,109 +43,144 @@ class Index extends React.Component {
         <Waypoint
           onEnter={this._handleWaypointEnter}
           onLeave={this._handleWaypointLeave}
-        >
-        </Waypoint>
+        />
         <Nav sticky={this.state.stickyNav} />
 
         <div id="main">
-
           <section id="intro" className="main">
             <div className="spotlight">
               <div className="content">
                 <header className="major">
-                  <h2>Ipsum sed adipiscing</h2>
+                  <h2>Nice to meet you</h2>
                 </header>
-                <p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-                adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-                Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
-                <ul className="actions">
-                  <li><Link to="/generic" className="button">Learn More</Link></li>
-                </ul>
+                <p>
+                  Hi! I'm Amy-Kate, but everyone calls me AK. I've been coding
+                  since the MySpace days of yore, and I've come a long way since
+                  table based layouts and autoplaying emo songs.<br />
+                  I love code and tech, and I'm always trying to figure out how
+                  to build things in a better, more efficient way.
+                </p>
               </div>
-              <span className="image"><img src={pic01} alt="" /></span>
+              <span className="image">
+                <img src={portrait} alt="Amy-Kate Andrews" />
+              </span>
             </div>
           </section>
 
           <section id="first" className="main special">
             <header className="major">
-              <h2>Magna veroeros</h2>
+              <h2>Skills</h2>
             </header>
-            <ul className="features">
-              <li>
-                <span className="icon major style1 fa-code"></span>
-                <h3>Ipsum consequat</h3>
-                <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+            <ul className="statistics">
+              <li className="style1">
+                <span className="icon fa-code" />
+                <strong>Javascript</strong>
               </li>
-              <li>
-                <span className="icon major style3 fa-copy"></span>
-                <h3>Amed sed feugiat</h3>
-                <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+              <li className="style2">
+                <span className="icon fa-terminal" />
+                <strong>Laravel / PHP</strong>
               </li>
-              <li>
-                <span className="icon major style5 fa-diamond"></span>
-                <h3>Dolor nullam</h3>
-                <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+              <li className="style3">
+                <span className="icon fa-sitemap" />
+                <strong>Django / Python</strong>
+              </li>
+              <li className="style4">
+                <span className="icon fa-diamond" />
+                <strong>Styling</strong>
+              </li>
+              <li className="style5">
+                <span className="icon fa-bug" />
+                <strong>TDD</strong>
               </li>
             </ul>
-            <footer className="major">
-              <ul className="actions">
-                <li><Link to="/generic" className="button">Learn More</Link></li>
-              </ul>
-            </footer>
+            <p className="content">
+              In the words of one of my managers, I am one of the "fullest stack
+              developers" he's worked with. I pride myself on being able to jump
+              between the back and front end of a codebase and do meaningful
+              work. I enjoy designing server-side logic just as much as I enjoy
+              creating some scroll-based animation. I'm a senior developer, but
+              I am of the "strong opinions held loosely" school of thought, and
+              I am constantly humbled by those around me. I love learning from
+              feedback and other engineers, and I am always learning more from
+              the amazing dev community.
+            </p>
           </section>
 
           <section id="second" className="main special">
             <header className="major">
-              <h2>Ipsum consequat</h2>
-              <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-              posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+              <h2>Companies I've Worked With</h2>
             </header>
-            <ul className="statistics">
-              <li className="style1">
-                <span className="icon fa-code-fork"></span>
-                <strong>5,120</strong> Etiam
+            <ul className="features">
+              <li>
+                <span className="icon adidas">
+                  <img src={adidas} alt="Adidas" />
+                </span>
               </li>
-              <li className="style2">
-                <span className="icon fa-folder-open-o"></span>
-                <strong>8,192</strong> Magna
+              <li>
+                <span className="icon byu">
+                  <img src={byu} alt="BYUTV" />
+                </span>
               </li>
-              <li className="style3">
-                <span className="icon fa-signal"></span>
-                <strong>2,048</strong> Tempus
+              <li>
+                <span className="icon converse">
+                  <img src={converse} alt="Converse" />
+                </span>
               </li>
-              <li className="style4">
-                <span className="icon fa-laptop"></span>
-                <strong>4,096</strong> Aliquam
+              <li>
+                <span className="icon ghost">
+                  <img src={ghost} alt="Ghost Lifestyle" />
+                </span>
               </li>
-              <li className="style5">
-                <span className="icon fa-diamond"></span>
-                <strong>1,024</strong> Nullam
+              <li>
+                <span className="icon publik">
+                  <img src={publik} alt="Publik Coffee" />
+                </span>
+              </li>
+              <li>
+                <span className="icon rodeo">
+                  <img src={rodeo} alt="Rodeo Austin" />
+                </span>
+              </li>
+              <li>
+                <span className="icon skiutah">
+                  <img src={skiutah} alt="Ski Utah" />
+                </span>
+              </li>
+              <li>
+                <span className="icon project-sunday">
+                  <img src={projectSunday} alt="Project Sunday" />
+                </span>
               </li>
             </ul>
-            <p className="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
-            <footer className="major">
-              <ul className="actions">
-                <li><Link to="/generic" className="button">Learn More</Link></li>
-              </ul>
+            <footer>
+              <p>Portfolio details and write-ups are available upon request.</p>
             </footer>
           </section>
 
           <section id="cta" className="main special">
             <header className="major">
-              <h2>Congue imperdiet</h2>
-              <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-              posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+              <h2>Extracurricular Activities</h2>
+              <p>
+                Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
+                posuere. Nulla massa urna, fermentum eget quam aliquet.
+              </p>
             </header>
-            <footer className="major">
+            {/* <footer className="major">
               <ul className="actions">
-                <li><Link to="/generic" className="button special">Get Started</Link></li>
-                <li><Link to="/generic" className="button">Learn More</Link></li>
+                <li>
+                  <Link to="/generic" className="button special">
+                    Get Started
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/generic" className="button">
+                    Learn More
+                  </Link>
+                </li>
               </ul>
-            </footer>
+            </footer> */}
           </section>
-
         </div>
-
       </div>
     )
   }
