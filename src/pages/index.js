@@ -7,7 +7,7 @@ import Waypoint from 'react-waypoint'
 import Header from '../components/Header'
 import Nav from '../components/Nav'
 
-import portrait from '../assets/images/la-ak.jpg'
+import portrait from '../assets/images/portrait.jpg'
 import adidas from '../assets/images/logos/adidas.png'
 import byu from '../assets/images/logos/byu.png'
 import converse from '../assets/images/logos/converse.png'
@@ -56,9 +56,9 @@ class Index extends React.Component {
                 <p>
                   Hi! I'm Amy-Kate, but everyone calls me AK. I've been coding
                   since the MySpace days of yore, and I've come a long way since
-                  table based layouts and autoplaying emo songs.<br />
-                  I love code and tech, and I'm always trying to figure out how
-                  to build things in a better, more efficient way.
+                  table based layouts and autoplaying emo songs.
+                  <br />I love code and tech, and I'm always trying to figure
+                  out how to build things in a better, more efficient way.
                 </p>
               </div>
               <span className="image">
@@ -76,33 +76,31 @@ class Index extends React.Component {
                 <span className="icon fa-code" />
                 <strong>Javascript</strong>
               </li>
-              <li className="style2">
-                <span className="icon fa-terminal" />
-                <strong>Laravel / PHP</strong>
-              </li>
               <li className="style3">
                 <span className="icon fa-sitemap" />
-                <strong>Django / Python</strong>
+                <strong>HTML / CSS</strong>
               </li>
               <li className="style4">
                 <span className="icon fa-diamond" />
-                <strong>Styling</strong>
-              </li>
-              <li className="style5">
-                <span className="icon fa-bug" />
-                <strong>TDD</strong>
+                <strong>Perfect Pixels</strong>
               </li>
             </ul>
             <p className="content">
-              In the words of one of my managers, I am one of the "fullest stack
-              developers" he's worked with. I pride myself on being able to jump
-              between the back and front end of a codebase and do meaningful
-              work. I enjoy designing server-side logic just as much as I enjoy
-              creating some scroll-based animation. I'm a senior developer, but
-              I am of the "strong opinions held loosely" school of thought, and
-              I am constantly humbled by those around me. I love learning from
-              feedback and other engineers, and I am always learning more from
-              the amazing dev community.
+              I <em>love</em> writing code. Really love it. I started in high
+              school and never stopped.
+              <br />I pride myself on being able to hop between the front and
+              back end of a project, helping out wherever I'm needed, but I'm
+              most comfortable in the client-side world. I love creating subtle
+              animations and gorgeous user interfaces. I'm known amongst the
+              designers I've worked with for creating pixel-perfect pages and
+              for being a great collaborator. I have an eye for visual design
+              and derive a ridiculous amount of joy from a site with slick hover
+              states.
+              <br />I play well with others - in my past life I worked in client
+              relations so I am as comfortable with a crowd as I am with a
+              friend. I like to bond with my teammates and to mentor more junior
+              developers. I'm happiest when I'm working with smart, friendly,
+              and curious people.
             </p>
           </section>
 
@@ -163,14 +161,14 @@ class Index extends React.Component {
             </header>
             <p>Other things about me:</p>
             <p>
+              I love learning - I speak French and I'm trying to learn Spanish.
+            </p>
+            <p>Coffee is my love language.</p>
+            <p>
               Side project: <a href="http://urbanipsum.com">Urban Ipsum</a>
             </p>
             <p>I'm left handed.</p>
             <p>I love watching Dateline.</p>
-            <p>
-              I'm pretty obsessed with skiing. If you french fry when you're
-              supposed to pizza, you're gonna have a bad time.
-            </p>
           </section>
         </div>
       </div>
