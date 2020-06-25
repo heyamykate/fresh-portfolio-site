@@ -1,18 +1,15 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const Footer = props => (
+const Footer = (props) => (
   <footer id="footer">
     <section>
-      <h2>hire me pls</h2>
+      <h2>don't be a stranger</h2>
       <p>
         I'm currently accepting freelance work. If you need a rad site, want
         help on a project, or just want to talk about code, drop me a line.
-        &ensp; <span>💁</span>
+        &ensp; <span>💁‍♀️</span>
       </p>
-    </section>
-    <section>
-      <h2>don't be a stranger</h2>
       <dl className="alt">
         <dt>Location</dt>
         <dd>Salt Lake City &bull; UT &bull; USA</dd>

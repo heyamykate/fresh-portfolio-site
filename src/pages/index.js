@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Waypoint from 'react-waypoint'
@@ -51,10 +50,10 @@ class Index extends React.Component {
             <div className="spotlight">
               <div className="content">
                 <header className="major">
-                  <h2>Nice to meet you</h2>
+                  <h2>Hey y'all</h2>
                 </header>
                 <p>
-                  Hi! I'm Amy-Kate, but everyone calls me AK. I've been coding
+                  I'm Amy-Kate, but everyone calls me AK. I've been writing code
                   since the MySpace days of yore, and I've come a long way since
                   table based layouts and autoplaying emo songs.
                   <br />I love code and tech, and I'm always trying to figure
@@ -69,12 +68,16 @@ class Index extends React.Component {
 
           <section id="first" className="main special">
             <header className="major">
-              <h2>Skills</h2>
+              <h2>Technical Chops</h2>
             </header>
             <ul className="statistics">
               <li className="style1">
                 <span className="icon fa-code" />
                 <strong>Javascript</strong>
+              </li>
+              <li className="style2">
+                <span className="icon fa-heart" />
+                <strong>Laravel</strong>
               </li>
               <li className="style3">
                 <span className="icon fa-sitemap" />
