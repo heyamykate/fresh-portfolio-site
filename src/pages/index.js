@@ -92,16 +92,18 @@ class Index extends React.Component {
               I <em>love</em> writing code. Really love it. I started in high
               school and never stopped.
               <br />I pride myself on being able to hop between the front and
-              back end of a project, helping out wherever I'm needed, but I'm
-              most comfortable in the client-side world. I love creating subtle
-              animations and gorgeous user interfaces. I'm known amongst the
-              designers I've worked with for creating pixel-perfect pages and
-              for being a great collaborator. I have an eye for visual design
-              and derive a ridiculous amount of joy from a site with slick hover
-              states.
+              back end of a project, helping out wherever I'm needed. I love
+              creating subtle animations and gorgeous user interfaces. I'm known
+              amongst the designers I've worked with for creating pixel-perfect
+              pages and for being a great collaborator, and I derive a
+              ridiculous amount of joy from a site with slick hover states.
+              <br />
+              I have a knack for working with legacy code and whipping it into
+              shape - hunting down bugs and refactoring are my idea of a good
+              time.
               <br />I play well with others - in my past life I worked in client
-              relations so I am as comfortable with a crowd as I am with a
-              friend. I like to bond with my teammates and to mentor more junior
+              relations, so working across different teams comes naturally to
+              me. I like to bond with my teammates and to mentor more junior
               developers. I'm happiest when I'm working with smart, friendly,
               and curious people.
             </p>
